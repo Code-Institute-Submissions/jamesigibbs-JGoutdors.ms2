@@ -1,15 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
 
-/*Body*/
+/*Body-------------------------------------------------------------------*/
 body {
     font-family: "Source Sans Pro", sans-serif;
+    background-image: url("../img/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+h1 {
+	font-size: 50px;
+	font-weight: 600;
+}
+
+/*Content*/
+.content {
+    background-color: #EAF2E4;
+    text-align: center;
 }
 
 /*Header*/
 header {
     background-color: #4087B4;
     border: solid 1px #707070;
-    border-radius: 0 0 100px 100px;
+    border-radius: 0 0 125px 125px;
 }
 
 #logo {
@@ -36,7 +51,46 @@ header {
     margin: 75px 0 auto;
 }
 
+/*Footer*/
+footer {
+    background-color: #2C3D36;
+}
+
+.ngb {
+    height: 50px;
+    width: auto;
+    margin: 0 auto;
+}
+
 /*Hero img*/
 #hero {
     width: 100%;
+}
+
+.hero-c {
+    padding: 0;
+}
+
+/* About Us*/
+.about {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.about-t {
+    font-size: 30px;
+}
+
+.about-c {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+#team {
+    height: 75%;
+    width: auto;
+    margin: 0 auto;
+    margin-top: 50px;
 }
