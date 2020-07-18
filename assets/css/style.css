@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
+
+/*Body*/
+body {
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+/*Header*/
+header {
+    background-color: #4087B4;
+    border: solid 1px #707070;
+    border-radius: 0 0 100px 100px;
+}
+
+#logo {
+    height: 199px;
+    width: 135px;
+    margin: 10px 0 10px 125px;
+}
+
+.navbar {
+    background-color: transparent !important;
+    margin: 125px 0 auto;
+}
+.nav-list {
+    margin: 0 auto;
+}
+
+.nav-list {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.shopping {
+    font-size: 60px;
+    margin: 75px 0 auto;
+}
+
+/*Hero img*/
+#hero {
+    width: 100%;
+}
