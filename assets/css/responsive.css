@@ -1,0 +1,25 @@
+/*Tablet*/
+@media only screen and (max-width: 1024px) {
+   /*Header*/
+   header {
+       border-radius: 0 0 25px 25px;
+   }
+
+   .toggle-menu {
+       margin-left: 50%;
+    }
+}
+
+
+/*Phone*/
+@media only screen and (max-width: 500px) {
+    /*Header*/
+   header {
+       border-radius: 0;
+   }
+
+   /*index.html*/
+    #team {
+        width: 100%;
+    }
+}
