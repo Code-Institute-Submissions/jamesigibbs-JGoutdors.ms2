@@ -22,4 +22,10 @@
     #team {
         width: 100%;
     }
+
+    #hero {
+        width: 175%;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
 }
