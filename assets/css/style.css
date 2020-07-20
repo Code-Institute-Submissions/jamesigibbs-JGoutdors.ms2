@@ -20,6 +20,7 @@ h1 {
 .content {
     background-color: #EAF2E4;
     text-align: center;
+    height: 100%;
 }
 
 /*Header*/
@@ -140,5 +141,29 @@ footer {
 
 .activity-i {
     width: 100%;
+    margin-top: 10px;
+}
+
+.activity-b {
     
+}
+.table {
+    margin: 0 auto
+}
+
+/*booking.html----------------------------------------------------*/
+.date {
+     margin: 5px 20px;
+
+}
+
+.time {
+   
+}
+
+.slot {
+   
+    background-color: #008000;
+    border: solid 1px #707070;
+    margin: 10px 20px;
 }
