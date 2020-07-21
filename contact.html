@@ -74,31 +74,43 @@
 		<section>
 			<div class="container content">
 				<h1>Contact Us</h1>
-				<div class="row">
-					<div class="col-lg-6 col-12 order-2 about">
-						<h3 class="about-t">About Us</h3>
-						<p class="about-c">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus autem ea quae reiciendis voluptas
-							suscipit ipsa nihil distinctio, provident excepturi consequatur quis explicabo animi. Dolor totam, saepe
-							ducimus rem, dolores debitis tenetur, cum numquam iste maiores corrupti error reiciendis quos inventore
-							labore. Illum laborum illo vitae, quod ducimus reprehenderit error voluptatibus delectus in rem. Tempore
-							nulla quibusdam maxime harum non alias aut porro soluta magni, temporibus aliquid explicabo beatae! At
-							magnam hic, minus illo voluptatibus sint similique cumque tempora aliquam. Fuga, autem? Quasi,
-							necessitatibus! Expedita saepe veritatis rerum illum dolorem, fugit quaerat. Soluta similique, rerum
-							voluptatibus sit quia dolorem totam porro asperiores veritatis nulla illum magni cumque sapiente expedita
-							assumenda, animi quasi! Vero molestiae voluptas ut iusto maiores animi aut molestias eos veritatis porro
-							autem, sequi commodi, ipsum unde. Sed ad perspiciatis modi deserunt quasi, corporis labore earum, quae
-							distinctio maxime repudiandae facere assumenda voluptatibus optio ea! Est, cupiditate fuga vero non atque
-							totam facere porro hic iusto quae delectus minus! Id in voluptatem commodi voluptatum odit velit explicabo
-							dignissimos laudantium. Dicta quos culpa corrupti vero voluptatem dolor aspernatur, temporibus deleniti
-							magni provident at suscipit accusantium sunt architecto mollitia facilis commodi vitae hic ut quam eveniet
-							et qui officiis. Nobis.
-						</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia quod maiores error, cum excepturi assumenda?
+					Dolor et similique nisi quo reiciendis eum iusto voluptatum labore rerum ratione ea eveniet incidunt fuga
+					magni architecto praesentium perspiciatis autem velit enim eius nihil beatae, ad dolores! Iste molestias
+					ducimus nam tempora officia necessitatibus reprehenderit quia, voluptatem nesciunt laboriosam dolore
+					voluptates harum accusamus facere itaque tenetur veritatis fugit corrupti aut autem sapiente. Soluta et,
+					consequuntur iure repudiandae consectetur libero odio omnis odit error, in recusandae. Nulla blanditiis eos
+					labore voluptatum omnis asperiores, nam debitis dolorum temporibus atque perspiciatis modi! Ipsum at alias
+					excepturi sed.
+				</p>
+                <form class="contact-f" action="" method="POST">
+				<div class="form-group">
+					<div class="row">
+						<div class="col-12 col-md-6">
+							<label for="fname">First Name*</label>
+							<input type="text" class="form-control" name="fname" id="fname" placeholder="First Name" required>
 					</div>
-					<div class="col-lg-6 col-12 order-1">
-						<img id="team" src="assets/img/team.jpg" alt="Team" />
-					</div>
-				</div>
+							<div class="col-12 col-md-6">
+								<label for="lname">Last Name*</label>
+								<input type="text" class="form-control" name="lname" id="lname" placeholder="Last Name" required>
+						  </div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="email-a">Email Address*</label>
+							<input type="email" class="form-control" name="email" id="email-a" aria-describedby="emailHelp" placeholder="Enter email" required>
+						</div>
+							<div class="form-group">
+								<label for="message">Message</label>
+								<textarea type="text" class="form-control" name="message" id="message" placeholder="Message" rows="8"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="attachment">Attachment</label>
+								<input type="file" class="form-control-file" id="attachment">
+						  </div>
+								<button type="submit" class="btn btn-primary submit">Submit</button>
+			</form>
 			</div>
 		</section>
 		<footer>
@@ -147,6 +159,6 @@
 			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 			crossorigin="anonymous"
 		></script>
-        <script src="assets/scripts/menu.js"></script>
+		<script src="assets/scripts/menu.js"></script>
 	</body>
 </html>
