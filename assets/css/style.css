@@ -188,3 +188,9 @@ footer {
 .submit:hover {
     background-color: #1c7191;
 }
+
+/*Activities, e.g climbing.html----------------------------------------------------*/
+.book-b {
+    background-color: #629460;
+    border: 2.5px #2C3D36 solid;
+}
