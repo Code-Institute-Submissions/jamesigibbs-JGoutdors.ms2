@@ -167,3 +167,24 @@ footer {
     border: solid 1px #707070;
     margin: 10px 20px;
 }
+
+/*contact.html----------------------------------------------------*/
+
+.contact-f {
+    padding: 30px 50px 20px 50px;
+    margin-bottom: 80px;
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+    background-color:  #629460;
+    border-radius: 7%;
+    border: 5px #2C3D36 solid;
+}
+
+.submit {
+    width: 100%;
+    background-color: #4087B4;
+}
+
+.submit:hover {
+    background-color: #1c7191;
+}
