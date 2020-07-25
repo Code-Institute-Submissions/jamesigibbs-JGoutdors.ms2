@@ -8,6 +8,10 @@
    .toggle-menu {
        margin-left: 50%;
     }
+    .nav-list {
+    font-size: 20px;
+}
+
 }
 
 
@@ -26,6 +30,9 @@
     #hero {
         width: 175%;
         margin: 0 auto;
+    }
+
+    .hero-c {
         overflow-x: hidden;
     }
 }

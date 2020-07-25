@@ -34,7 +34,6 @@ header {
 #logo {
     height: 147px;
     width: 100px;
-    margin: 10px 0 10px 125px;
 }
 
 .navbar {
@@ -46,7 +45,7 @@ header {
 }
 
 .nav-list {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 600;
 }
 
@@ -59,28 +58,18 @@ header {
 footer {
     background-color: #2C3D36;
     width: 100%;
+    color: #707070;
+    padding: 15px;
 }
 
-.created {
-    margin-left: 10px;
-    margin-top: auto;
-    margin-bottom: auto;
-    text-align: left;
-}
-
-.ngb {
-     text-align: center;
+.footer-e {
+    padding: 5px;
 }
 
 .ngb-logo {
     height: 50px;
     width: auto;
     margin-top: 5px; 
-}
-
-.contact {
-    margin-left: 50px;
-    text-align: right;
 }
 
 #email {
@@ -137,7 +126,7 @@ footer {
 .activity-c {
     background-color: #629460; 
     margin: 20px;
-    
+    padding: 10px;
 }
 
 .activity-i {
