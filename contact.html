@@ -18,11 +18,13 @@
 		<link rel="stylesheet" href="assets/css/style.css" />
 		<link rel="stylesheet" href="assets/css/responsive.css" />
 		<title>JG Outdoors</title>
-        <link rel="icon" type="image/png" href="hassets/img/logo.png">
+		<link rel="icon" type="image/png" href="hassets/img/logo.png" />
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+		
 	</head>
 
 	<body>
-			<!--Header-->
+		<!--Header-->
 		<header>
 			<div class="container">
 				<div class="row">
@@ -88,36 +90,51 @@
 					labore voluptatum omnis asperiores, nam debitis dolorum temporibus atque perspiciatis modi! Ipsum at alias
 					excepturi sed.
 				</p>
-                <form class="contact-f" action="" method="POST">
-				<div class="form-group">
-					<div class="row">
-						<div class="col-12 col-md-6">
-							<label for="fname">First Name*</label>
-							<input type="text" class="form-control" name="fname" id="fname" placeholder="First Name" required>
-					</div>
+				<form class="contact-f" onsubmit="return sendMail(this);">
+					<div class="form-group">
+						<div class="row">
+							<div class="col-12 col-md-6">
+								<label for="fname">First Name*</label>
+								<input type="text" class="form-control" name="fname" id="fname" placeholder="First Name" required />
+							</div>
 							<div class="col-12 col-md-6">
 								<label for="lname">Last Name*</label>
-								<input type="text" class="form-control" name="lname" id="lname" placeholder="Last Name" required>
-						  </div>
+								<input type="text" class="form-control" name="lname" id="lname" placeholder="Last Name" required />
 							</div>
 						</div>
-						<div class="form-group">
-							<label for="email-a">Email Address*</label>
-							<input type="email" class="form-control" name="email" id="email-a" aria-describedby="emailHelp" placeholder="Enter email" required>
-						</div>
-							<div class="form-group">
-								<label for="message">Message</label>
-								<textarea type="text" class="form-control" name="message" id="message" placeholder="Message" rows="8"></textarea>
-							</div>
-							<div class="form-group">
-								<label for="attachment">Attachment</label>
-								<input type="file" class="form-control-file" id="attachment">
-						  </div>
-								<button type="submit" class="btn btn-primary submit">Submit</button>
-			</form>
+					</div>
+					<div class="form-group">
+						<label for="email">Email Address*</label>
+						<input
+							type="email"
+							class="form-control"
+							name="email"
+							id="email"
+							aria-describedby="emailHelp"
+							placeholder="Enter email"
+							required
+						/>
+					</div>
+					<div class="form-group">
+						<label for="message">Message</label>
+						<textarea
+							type="text"
+							class="form-control"
+							name="message"
+							id="message"
+							placeholder="Message"
+							rows="8"
+						></textarea>
+					</div>
+					<div class="form-group">
+						<label for="attachment">Attachment</label>
+						<input type="file" class="form-control-file" id="attachment" />
+					</div>
+					<button type="submit" class="btn btn-primary submit">Submit</button>
+				</form>
 			</div>
 		</section>
-		 <!--Footer-->
+		<!--Footer-->
 		<footer>
 			<div class="row text-center">
 				<div class="col-12 col-md-3 text-lg-left footer-e">
@@ -135,7 +152,7 @@
 					<i class="fab fa-twitter social"></i>
 				</div>
 				<div class="col-12 col-md-3 text-lg-right footer-e">
-					<p id="email">JGoutdoors@gmail.com</p>
+					<p id="email-a">JGoutdoors@gmail.com</p>
 					<p id="phone">01628536790</p>
 				</div>
 			</div>
@@ -155,6 +172,11 @@
 			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 			crossorigin="anonymous"
 		></script>
-		<script src="assets/scripts/menu.js"></script>
+		<script type="text/javascript">
+			(function () {
+                emailjs.init("user_Gz0IvrcKFhPtkSTIP4x1N");
+			})();
+		</script>
+        <script src="assets/scripts/sendEmail.js"></script>
 	</body>
 </html>

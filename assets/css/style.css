@@ -16,6 +16,10 @@ h1 {
     padding-top: 30px;
 }
 
+a:hover{
+    text-decoration: none;
+}
+
 /*Content*/
 .content {
     background-color: #EAF2E4;
@@ -72,7 +76,7 @@ footer {
     margin-top: 5px; 
 }
 
-#email {
+#email-a {
     margin-bottom: 2.5px;
 }
 
@@ -134,9 +138,11 @@ footer {
     margin-top: 10px;
 }
 
-.activity-b {
-    
+.activity-t {
+    text-decoration: none;
+    padding: 5px;
 }
+
 .table {
     margin: 0 auto
 }
