@@ -17,12 +17,12 @@
 		/>
 		<link rel="stylesheet" href="assets/css/style.css" />
 		<link rel="stylesheet" href="assets/css/responsive.css" />
+		<link rel="icon" type="image/png" href="assets/img/logo.png" />
 		<title>JG Outdoors</title>
-        <link rel="icon" type="image/png" href="hassets/img/logo.png">
 	</head>
 
 	<body>
-			<!--Header-->
+		<!--Header-->
 		<header>
 			<div class="container">
 				<div class="row">
@@ -85,64 +85,156 @@
 		</section>
 		<section>
 			<div class="container content">
-				calender API
+				<!--Modal-->
+				<div
+					class="modal fade"
+					id="myModal"
+					tabindex="-1"
+					role="dialog"
+					aria-labelledby="exampleModalLabel"
+					aria-hidden="true"
+					data-keyboard="false"
+					data-backdrop="static"
+				>
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="exampleModalLabel">Book Now</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body"></div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal" id="cancel">Cancel</button>
+								<button type="button" class="btn btn-primary" id="addCart">Add To Cart</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--Modal end-->
+
+				<div class="row">
+					<div class="col-6">
+						<div class="row">
+							<div class="col-6">
+								<div class="row">
+									<div class="col">
+										<div class="slot-sm" id="slot-b"></div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col">
+										<div class="slot-sm" id="slot-s"></div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col">
+										<div class="slot-sm" id="slot-a"></div>
+									</div>
+								</div>
+							</div>
+							<div class="col-3">
+								<div class="row">
+									<div class="col">
+										<p>Booked</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col">
+										<p>Selected</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col">
+										<p>Avalible</p>
+									</div>
+								</div>
+							</div>
+                            <div class="col-3"></div>
+						</div>
+					</div>
+					<div class="col-6">
+						<h5>Pick a Date</h5>
+						<input type="date" />
+					</div>
+				</div>
 			</div>
 		</section>
 		<section>
 			<div class="container content">
 				<div class="row">
-					<div class="col-1 time"></div>
-					<div class="col-1 d-none d-lg-block date">Monday<br />${`date`}</div>
-					<div class="col-1 d-none d-lg-block date">Tuesday<br />${`date`}</div>
-					<div class="col-1 date">Wednesday<br />${`date`}</div>
-					<div class="col-1 date">Thursday<br />${`date`}</div>
-					<div class="col-1 date">Friday<br />${`date`}</div>
-					<div class="col-1 d-none d-lg-block date">Saturday<br />${`date`}</div>
-					<div class="col-1 d-none d-lg-block date">Sunday<br />${`date`}</div>
+					<div class="col d-none d-md-block"></div>
+					<div class="col time"></div>
+					<div class="col date">Wednesday<br />${`date`}</div>
+					<div class="col date">Thursday<br />${`date`}</div>
+					<div class="col date">Friday<br />${`date`}</div>
+					<div class="col d-none d-md-block"></div>
 				</div>
 				<div class="row">
-					<div class="col-1 time">9:30 - 11:00</div>
-					<div class="col-1 d-none d-lg-block slot"></div>
-					<div class="col-1 d-none d-lg-block slot"></div>
-					<div class="col-1 slot"></div>
-					<div class="col-1 slot"></div>
-					<div class="col-1 slot"></div>
-					<div class="col-1 d-none d-lg-block slot"></div>
-					<div class="col-1 d-none d-lg-block slot"></div>
+					<div class="col d-none d-md-block"></div>
+					<div class="col time">9:30 - 11:00</div>
+					<div class="col">
+						<div class="slot" id="ySlot1"></div>
+					</div>
+					<div class="col">
+						<div class="slot" id="cSlot1"></div>
+					</div>
+					<div class="col">
+						<div class="slot" id="tSlot1"></div>
+					</div>
+					<div class="col d-none d-md-block"></div>
 				</div>
-				
+
 				<div class="row">
-					<div class="col-1 time">11:30 -13:00</div>
-					<div class="col-1 d-none d-lg-block slot"></div>
-					<div class="col-1 d-none d-lg-block slot"></div>
-					<div class="col-1 slot"></div>
-					<div class="col-1 slot"></div>
-					<div class="col-1 slot"></div>
-					<div class="col-1 d-none d-lg-block slot"></div>
-					<div class="col-1 d-none d-lg-block slot"></div>
+					<div class="col d-none d-md-block"></div>
+					<div class="col time">11:30 - 13:00</div>
+					<div class="col">
+						<div class="slot" id="ySlot2"></div>
+					</div>
+					<div class="col">
+						<div class="slot" id="cSlot2"></div>
+					</div>
+					<div class="col">
+						<div class="slot" id="tSlot2"></div>
+					</div>
+					<div class="col d-none d-md-block"></div>
 				</div>
-                <div class="row">
-					<div class="col-12 lunch">Lunch</div>
-				</div>
+
 				<div class="row">
-					<div class="col-1 time">14:30 - 16:00</div>
-					<div class="col-1 d-none d-lg-block slot"></div>
-					<div class="col-1 d-none d-lg-block slot"></div>
-					<div class="col-1 slot"></div>
-					<div class="col-1 slot"></div>
-					<div class="col-1 slot"></div>
-					<div class="col-1 d-none d-lg-block slot"></div>
-					<div class="col-1 d-none d-lg-block slot"></div>
+					<div class="col-3"></div>
+					<div class="col lunch">Lunch</div>
+					<div class="col-1 d-none d-md-block"></div>
 				</div>
+
 				<div class="row">
-					<div class="col-1 time">16:30 - 18:00</div>
-					<div class="col-1 d-none d-lg-block slot"></div>
-					<div class="col-1 d-none d-lg-block slot"></div>
-					<div class="col-1 slot"></div>
-					<div class="col-1 slot"></div>
-					<div class="col-1 slot"></div>
-					<div class="col-1 d-none d-lg-block slot"></div>
-					<div class="col-1 d-none d-lg-block slot"></div>
+					<div class="col d-none d-md-block"></div>
+					<div class="col time">14:30 - 16:00</div>
+					<div class="col">
+						<div class="slot" id="ySlot3"></div>
+					</div>
+					<div class="col">
+						<div class="slot" id="cSlot3"></div>
+					</div>
+					<div class="col">
+						<div class="slot" id="tSlot3"></div>
+					</div>
+					<div class="col d-none d-md-block"></div>
+				</div>
+
+				<div class="row">
+					<div class="col d-none d-md-block"></div>
+					<div class="col time">16:30 - 18:00</div>
+					<div class="col">
+						<div class="slot" id="ySlot4"></div>
+					</div>
+					<div class="col">
+						<div class="slot" id="cSlot4"></div>
+					</div>
+					<div class="col">
+						<div class="slot" id="tSlot4"></div>
+					</div>
+					<div class="col d-none d-md-block"></div>
 				</div>
 			</div>
 		</section>
@@ -164,15 +256,14 @@
 					<a href="https://twitter.com/"><i class="fab fa-twitter social"></i></a>
 				</div>
 				<div class="col-12 col-md-3 text-lg-right footer-e">
-					<a href="mailto:jamesigibbs180@gmail.com">jamesigibbs180@gmail.com</a> <br>
+					<a href="mailto:jamesigibbs180@gmail.com">jamesigibbs180@gmail.com</a> <br />
 					<a href="tel:07871188025">07871188025</a>
 				</div>
 			</div>
 		</footer>
-
 		<script
-			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+			integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
 			crossorigin="anonymous"
 		></script>
 		<script
@@ -185,6 +276,6 @@
 			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 			crossorigin="anonymous"
 		></script>
-		<script src="assets/scripts/menu.js"></script>
+		<script src="assets/scripts/book.js"></script>
 	</body>
 </html>

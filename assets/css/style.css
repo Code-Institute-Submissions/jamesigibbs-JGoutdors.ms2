@@ -156,19 +156,45 @@ footer a:hover {
 
 /*booking.html----------------------------------------------------*/
 .date {
-     margin: 5px 20px;
+     margin: 10px auto;
 
-}
-
-.time { 
-   
 }
 
 .slot {
-   
     background-color: #008000;
     border: solid 1px #707070;
-    margin: 10px 20px;
+    margin: 10px auto;
+    width: 50%;
+}
+
+.slot:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.slot-sm {
+    border: solid 1px #707070;
+    margin: 10px auto;
+    width: 10%;
+}
+
+.slot-sm:after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+#slot-b {
+    background: #ff0000;
+}
+
+#slot-s {
+    background: #FD6A02;
+}
+
+#slot-a {
+    background: #008000;
 }
 
 /*contact.html----------------------------------------------------*/
