@@ -1,14 +1,17 @@
 
 //Gerate Popup
+    let cSlot;
 
 $(".slot").click(function () {
-    checkColour()
-    $(this).css("background-color", "#FD6A02");
-	$("#myModal").modal("show");
-	let cSlot = this;
-
+     cSlot = this;
+     console.log(cSlot);
+    if (cSlot.style.backgroundColor == "rgb(0, 128, 0)") {
+        $(cSlot).css("background-color", "#FD6A02");
+	    $("#myModal").modal("show");
+    }
+    
 	$("#addCart").click(function () {
-		$(cSlot).css("background-color", "#ff0000");
+		$(cSlot).css("background-color", "rgb(255, 0, 0)");
         $("#myModal").modal("hide");
 	});
 
@@ -20,19 +23,5 @@ $(".slot").click(function () {
 		$(cSlot).css("background-color", "#008000");
     });
 });
-
-function checkColour() {
- let colourCheck = document.getElementsByClassName("slot")
-    for(let i = 0; i < colourCheck.length; i++) {
-        let colour = getComputedStyle(colourCheck[i]).backgroundColor
-        console.log(colour);
-    }
-}
-
-
-// if (document.getElementsByClassName("slot").style.background-color == "#ff0000") {
-//     $(this).click(function () {
-// 	$("#myModal").modal("hide")})
-// };
 
 //Shopping Cart
