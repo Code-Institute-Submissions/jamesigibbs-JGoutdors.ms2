@@ -86,10 +86,6 @@ footer a {
     
 }
 
-footer a:hover {
-    color: #717171;
-}
-
 /*index.html--------------------------------------------------------------*/
 
 /*Hero img*/
@@ -196,6 +192,29 @@ footer a:hover {
     background: #008000;
 }
 
+/* Modal*/
+.modal-header {
+    background-color: #4087B4;
+    border: solid 1px #707070;
+}
+
+.modal-title {
+ font-weight: 600;
+}
+
+.modal-content {
+    background-color: #dcca98
+}
+
+.modal-footer {
+    background-color: #2C3D36;
+}
+
+.md-label {
+    font-weight: 600;
+}
+
+
 /*contact.html----------------------------------------------------*/
 
 .contact-f {
@@ -231,3 +250,4 @@ footer a:hover {
 .book-t {
      color: #fafafa;
 }
+

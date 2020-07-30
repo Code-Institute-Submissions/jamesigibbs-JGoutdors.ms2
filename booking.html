@@ -104,7 +104,37 @@
 									<span aria-hidden="true">&times;</span>
 								</button>
 							</div>
-							<div class="modal-body"></div>
+							<div class="modal-body">
+								<h6>${`date`}</h6>
+								<div class="row">
+									<div class="col">
+										<p>Select Activity:</p>
+									</div>
+									<div class="col">
+										<div class="dropdown">
+											<button
+												class="btn btn-secondary dropdown-toggle"
+												type="button"
+												id="dropdownMenuButton"
+												data-toggle="dropdown"
+												aria-haspopup="true"
+												aria-expanded="false"
+											>
+												Activity
+											</button>
+											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+												<a class="dropdown-item" href="#"><span id="archery" >Archery</span> £<span id="archery-p">25</span></a>
+												<a class="dropdown-item" href="#"><span id="climbing">Climbing</span> £<span id="climbing-p">25</span></a>
+												<a class="dropdown-item" href="#"><span id="highRopes">High Ropes</span> £<span id="highRopes-p">30</span></a>
+                                                <a class="dropdown-item" href="#"><span id="kayaking">Kayaking</span> £<span id="kayking-p">40</span></a>
+												<a class="dropdown-item" href="#"><span id="obstacleCourse">Obstacle Course</span> £<span id="obstacleCourse-p">15</span></a>
+												<a class="dropdown-item" href="#"><span id="zip">Zip Wire</span> £<span id="zip-p">25</span></a>
+											</div>
+										</div>
+									</div>
+								</div>
+                                <p>Activity: <span class="md-label" id="activity"></span> <br> Price: £<span class="md-label" id="price"></span></p>
+							</div>
 							<div class="modal-footer">
 								<button type="button" class="btn btn-secondary" data-dismiss="modal" id="cancel">Cancel</button>
 								<button type="button" class="btn btn-primary" id="addCart">Add To Cart</button>
@@ -112,7 +142,7 @@
 						</div>
 					</div>
 				</div>
-				<!--Modal end-->
+				<!--Booking Program-->
 
 				<div class="row">
 					<div class="col-6">
@@ -151,7 +181,7 @@
 									</div>
 								</div>
 							</div>
-                            <div class="col-3"></div>
+							<div class="col-3"></div>
 						</div>
 					</div>
 					<div class="col-6">
@@ -175,13 +205,13 @@
 					<div class="col d-none d-md-block"></div>
 					<div class="col time">9:30 - 11:00</div>
 					<div class="col">
-						<div class="slot" id="ySlot1" style="background-color:rgb(0,128,0)"></div>
+						<div class="slot" id="ySlot1" style="background-color: rgb(0, 128, 0);"></div>
 					</div>
 					<div class="col">
-						<div class="slot" id="cSlot1" style="background-color:rgb(0,128,0)"></div>
+						<div class="slot" id="cSlot1" style="background-color: rgb(0, 128, 0);"></div>
 					</div>
 					<div class="col">
-						<div class="slot" id="tSlot1" style="background-color:rgb(0,128,0)"></div>
+						<div class="slot" id="tSlot1" style="background-color: rgb(0, 128, 0);"></div>
 					</div>
 					<div class="col d-none d-md-block"></div>
 				</div>
@@ -190,13 +220,13 @@
 					<div class="col d-none d-md-block"></div>
 					<div class="col time">11:30 - 13:00</div>
 					<div class="col">
-						<div class="slot" id="ySlot2" style="background-color:rgb(0,128,0)"></div>
+						<div class="slot" id="ySlot2" style="background-color: rgb(0, 128, 0);"></div>
 					</div>
 					<div class="col">
-						<div class="slot" id="cSlot2" style="background-color:rgb(0,128,0)"></div>
+						<div class="slot" id="cSlot2" style="background-color: rgb(0, 128, 0);"></div>
 					</div>
 					<div class="col">
-						<div class="slot" id="tSlot2" style="background-color:rgb(0,128,0)"></div>
+						<div class="slot" id="tSlot2" style="background-color: rgb(0, 128, 0);"></div>
 					</div>
 					<div class="col d-none d-md-block"></div>
 				</div>
@@ -211,13 +241,13 @@
 					<div class="col d-none d-md-block"></div>
 					<div class="col time">14:30 - 16:00</div>
 					<div class="col">
-						<div class="slot" id="ySlot3" style="background-color:rgb(0,128,0)"></div>
+						<div class="slot" id="ySlot3" style="background-color: rgb(0, 128, 0);"></div>
 					</div>
 					<div class="col">
-						<div class="slot" id="cSlot3" style="background-color:rgb(0,128,0)"></div>
+						<div class="slot" id="cSlot3" style="background-color: rgb(0, 128, 0);"></div>
 					</div>
 					<div class="col">
-						<div class="slot" id="tSlot3" style="background-color:rgb(0,128,0)"></div>
+						<div class="slot" id="tSlot3" style="background-color: rgb(0, 128, 0);"></div>
 					</div>
 					<div class="col d-none d-md-block"></div>
 				</div>
@@ -226,13 +256,13 @@
 					<div class="col d-none d-md-block"></div>
 					<div class="col time">16:30 - 18:00</div>
 					<div class="col">
-						<div class="slot" id="ySlot4" style="background-color:rgb(0,128,0)"></div>
+						<div class="slot" id="ySlot4" style="background-color: rgb(0, 128, 0);"></div>
 					</div>
 					<div class="col">
-						<div class="slot" id="cSlot4" style="background-color:rgb(0,128,0)"></div>
+						<div class="slot" id="cSlot4" style="background-color: rgb(0, 128, 0);"></div>
 					</div>
 					<div class="col">
-						<div class="slot" id="tSlot4" style="background-color:rgb(0,128,0)"></div>
+						<div class="slot" id="tSlot4" style="background-color: rgb(0, 128, 0);"></div>
 					</div>
 					<div class="col d-none d-md-block"></div>
 				</div>
