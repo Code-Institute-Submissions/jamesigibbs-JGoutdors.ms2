@@ -12,7 +12,9 @@ $(".slot").click(function () {
         $(cSlot).css("background-color", "#FD6A02");
         $("#myModal").modal("show");
         time = $(cSlot).parent().siblings(".time").html();
-        $("#cTime").html(time); 
+        dateVar = $("#cDate").html()
+        $("#cTime").html(time);
+        $("#dateM").html(dateVar); 
     }
         activity = undefined;
         price = undefined;
@@ -54,15 +56,28 @@ function addToCart(name, num, time, dateVar) {
 let cart = []
 
 //Date picker
-  
+
 $("#datepicker").change(function() {
     let str = $(this).datepicker({ dateFormat: "dd/mm/yyyy"}).val();
-    
-    let yearStr = str.slice(0,4)
-    let year = parseInt(yearStr)
-    
-    let monStr = str.slice(6,8)
-    let mon = parseInt(monStr)
-
-    console.log(mon)
+    let datet = new Date(str);
+    let date = datet.toLocaleDateString();
+    let dayi = datet.getDay();
+    let DOW = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" , "Saturday"];
+    let day = DOW[dayi];
+    let pDatet = new Date();
+    pDatet.setDate(datet.getDate() - 1);
+    let nDatet = new Date();
+    nDatet.setDate(datet.getDate() + 1);
+    let pDate = pDatet.toLocaleDateString()
+    let nDate = nDatet.toLocaleDateString();
+    let pDayi = pDatet.getDay();
+    let pDay = DOW[pDayi];
+    let nDayi = nDatet.getDay();
+    let nDay = DOW[nDayi];
+    $("#pDate").html(pDate);
+    $("#pDay").html(pDay);
+    $("#cDate").html(date);
+    $("#cDay").html(day);
+    $("#nDate").html(nDate);
+    $("#nDay").html(nDay);
 });
