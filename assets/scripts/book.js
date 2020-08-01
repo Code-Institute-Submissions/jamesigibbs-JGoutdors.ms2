@@ -12,7 +12,7 @@ $(".slot").click(function () {
          alert("Select Date")
      } else if (cSlot.style.backgroundColor == "rgb(0, 128, 0)") {
         $(cSlot).css("background-color", "#FD6A02");
-        $("#myModal").modal("show");
+        $("#bookingModal").modal("show");
         time = $(cSlot).parent().siblings(".time").html();
         dateVar = $("#cDate").html()
         $("#cTime").html(time);
@@ -24,7 +24,7 @@ $(".slot").click(function () {
     
 	$("#addCart").click(function () {
 		$(cSlot).css("background-color", "rgb(255, 0, 0)");
-        $("#myModal").modal("hide");
+        $("#bookingModal").modal("hide");
         addToCart(activity, price, dateVar, time);
 	});
 
@@ -46,6 +46,9 @@ $(".dropdown-item").click(function () {
 });
 
 //Shopping Cart
+$(".cart").click(function (){
+$("#cartModal").modal("show");
+});
 
 function addToCart(name, num, date, time) {
     activityObj = new Object()
