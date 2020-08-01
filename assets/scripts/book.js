@@ -1,28 +1,31 @@
 
 //Gerate Popup
     let cSlot ;
-    let activity;
-    let price;
+    let activity = "";
+    let price = "";
     let time;
-    let activityObj = new Object();
+    
 
 $(".slot").click(function () {
      cSlot = this;
-    if (cSlot.style.backgroundColor == "rgb(0, 128, 0)") {
+     if($("#datepicker").val() == ""){
+         alert("Select Date")
+     } else if (cSlot.style.backgroundColor == "rgb(0, 128, 0)") {
         $(cSlot).css("background-color", "#FD6A02");
         $("#myModal").modal("show");
         time = $(cSlot).parent().siblings(".time").html();
         dateVar = $("#cDate").html()
         $("#cTime").html(time);
-        $("#dateM").html(dateVar); 
+        $("#dateM").html(dateVar);
+        activity = "";
+        price = ""; 
     }
-        activity = undefined;
-        price = undefined;
+       
     
 	$("#addCart").click(function () {
 		$(cSlot).css("background-color", "rgb(255, 0, 0)");
         $("#myModal").modal("hide");
-        addToCart(activity, price, time);
+        addToCart(activity, price, dateVar, time);
 	});
 
 	$("#cancel").click(function () {
@@ -43,12 +46,13 @@ $(".dropdown-item").click(function () {
 });
 
 //Shopping Cart
-function addToCart(name, num, time, dateVar) {
+
+function addToCart(name, num, date, time) {
     activityObj = new Object()
     activityObj.Activity = name;
     activityObj.Price = num;
+    activityObj.Date = date;
     activityObj.Time = time;
-    activityObj.Date = dateVar;
     cart.push(activityObj);
     console.log(cart)
 }
