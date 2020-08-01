@@ -105,7 +105,7 @@
 								</button>
 							</div>
 							<div class="modal-body">
-								<h6>${`date`}</h6>
+								<h6><span id="cTime"></span> -- <span></span></h6>
 								<div class="row">
 									<div class="col">
 										<p>Select Activity:</p>
@@ -186,7 +186,7 @@
 					</div>
 					<div class="col-6">
 						<h5>Pick a Date</h5>
-						<input type="date" />
+						<input id="datepicker" type="date" />
 					</div>
 				</div>
 			</div>
@@ -196,9 +196,9 @@
 				<div class="row">
 					<div class="col d-none d-md-block"></div>
 					<div class="col time"></div>
-					<div class="col date">Wednesday<br />${`date`}</div>
-					<div class="col date">Thursday<br />${`date`}</div>
-					<div class="col date">Friday<br />${`date`}</div>
+					<div class="col date"><span></span></div>
+					<div class="col date"><span id="cDate"></span></div>
+					<div class="col date"><span></span></div>
 					<div class="col d-none d-md-block"></div>
 				</div>
 				<div class="row">
@@ -296,6 +296,7 @@
 			integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
 			crossorigin="anonymous"
 		></script>
+         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 		<script
 			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
 			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
