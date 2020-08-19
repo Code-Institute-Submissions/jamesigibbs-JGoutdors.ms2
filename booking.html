@@ -100,9 +100,7 @@
 						<div class="modal-content">
 							<div class="modal-header">
 								<h5 class="modal-title" id="shoppingModalLabel">Shopping Cart</h5>
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 									<span aria-hidden="true">&times;</span>
-								</button>
 							</div>
 							<div class="modal-body">
 								<div class="row">
@@ -112,7 +110,7 @@
 									<div class="col"></div>
 									<div class="col">Price</div>
 								</div>
-								<div class="row">
+								<div class="row" id="cartRow">
 									<div class="col"><hr /></div>
 								</div>
 								<div class="row">
@@ -130,7 +128,7 @@
 									<div class="col"></div>
                                     <div class="col"></div>
                                     <div class="col"></div>
-									<div class="col"><span></span></div>
+									<div class="col"><span id="totel"></span></div>
 								</div>
 							</div>
 							<div class="modal-footer">
@@ -259,6 +257,7 @@
 				</div>
 			</div>
 		</section>
+        <!--Table-->
 		<section>
 			<div class="container content">
 				<div class="row">
@@ -273,13 +272,19 @@
 					<div class="col d-none d-md-block"></div>
 					<div class="col time">9:30 - 11:00</div>
 					<div class="col">
-						<div class="slot" id="ySlot1" style="background-color: rgb(0, 128, 0);"></div>
+						<div class="slot pSlot" id="pSlot1" style="background-color: rgb(0, 128, 0);">
+                            <span class="date-a d-none"></span><span class="time-a d-none">9:30 - 11:00</span>
+                        </div>
 					</div>
 					<div class="col">
-						<div class="slot" id="cSlot1" style="background-color: rgb(0, 128, 0);"></div>
+						<div class="slot cSlot" id="cSlot1" style="background-color: rgb(0, 128, 0);">
+                            <span class="date-a d-none"></span><span class="time-a d-none">9:30 - 11:00</span>
+                        </div>
 					</div>
 					<div class="col">
-						<div class="slot" id="tSlot1" style="background-color: rgb(0, 128, 0);"></div>
+						<div class="slot nSlot" id="nSlot1" style="background-color: rgb(0, 128, 0);">
+                            <span class="date-a d-none"></span><span class="time-a d-none">9:30 - 11:00</span>
+                        </div>
 					</div>
 					<div class="col d-none d-md-block"></div>
 				</div>
@@ -288,13 +293,19 @@
 					<div class="col d-none d-md-block"></div>
 					<div class="col time">11:30 - 13:00</div>
 					<div class="col">
-						<div class="slot" id="ySlot2" style="background-color: rgb(0, 128, 0);"></div>
+						<div class="slot pSlot" id="pSlot2" style="background-color: rgb(0, 128, 0);">
+                            <span class="date-a d-none"></span><span class="time-a d-none">11:30 - 13:00</span>
+                        </div>
 					</div>
 					<div class="col">
-						<div class="slot" id="cSlot2" style="background-color: rgb(0, 128, 0);"></div>
+						<div class="slot cSlot" id="cSlot2" style="background-color: rgb(0, 128, 0);">
+                            <span class="date-a d-none"></span><span class="time-a d-none">11:30 - 13:00</span>
+                        </div>
 					</div>
 					<div class="col">
-						<div class="slot" id="tSlot2" style="background-color: rgb(0, 128, 0);"></div>
+						<div class="slot nSlot" id="nSlot2" style="background-color: rgb(0, 128, 0);">
+                            <span class="date-a d-none"></span><span class="time-a d-none">11:30 - 13:00</span>
+                        </div>
 					</div>
 					<div class="col d-none d-md-block"></div>
 				</div>
@@ -309,13 +320,19 @@
 					<div class="col d-none d-md-block"></div>
 					<div class="col time">14:30 - 16:00</div>
 					<div class="col">
-						<div class="slot" id="ySlot3" style="background-color: rgb(0, 128, 0);"></div>
+						<div class="slot pSlot" id="pSlot3" style="background-color: rgb(0, 128, 0);">
+                            <span class="date-a d-none"></span><span class="time-a d-none">14:30 - 16:00</span>
+                        </div>
 					</div>
 					<div class="col">
-						<div class="slot" id="cSlot3" style="background-color: rgb(0, 128, 0);"></div>
+						<div class="slot cSlot" id="cSlot3" style="background-color: rgb(0, 128, 0);">
+                            <span class="date-a d-none"></span><span class="time-a d-none">14:30 - 16:00</span>
+                        </div>
 					</div>
 					<div class="col">
-						<div class="slot" id="tSlot3" style="background-color: rgb(0, 128, 0);"></div>
+						<div class="slot nSlot" id="nSlot3" style="background-color: rgb(0, 128, 0);">
+                            <span class="date-a d-none"></span><span class="time-a d-none">14:30 - 16:00</span>
+                        </div>
 					</div>
 					<div class="col d-none d-md-block"></div>
 				</div>
@@ -324,13 +341,19 @@
 					<div class="col d-none d-md-block"></div>
 					<div class="col time">16:30 - 18:00</div>
 					<div class="col">
-						<div class="slot" id="ySlot4" style="background-color: rgb(0, 128, 0);"></div>
+						<div class="slot pSlot" id="pSlot4" style="background-color: rgb(0, 128, 0);">
+                            <span class="date-a d-none"></span><span class="time-a d-none">16:30 - 18:00</span>
+                        </div>
 					</div>
 					<div class="col">
-						<div class="slot" id="cSlot4" style="background-color: rgb(0, 128, 0);"></div>
+						<div class="slot cSlot" id="cSlot4" style="background-color: rgb(0, 128, 0);">
+                            <span class="date-a d-none"></span><span class="time-a d-none">16:30 - 18:00</span>
+                        </div>
 					</div>
 					<div class="col">
-						<div class="slot" id="tSlot4" style="background-color: rgb(0, 128, 0);"></div>
+						<div class="slot nSlot" id="nSlot4" style="background-color: rgb(0, 128, 0);">
+                            <span class="date-a d-none"></span><span class="time-a d-none">16:30 - 18:00</span>
+                        </div>
 					</div>
 					<div class="col d-none d-md-block"></div>
 				</div>
