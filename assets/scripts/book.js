@@ -4,7 +4,7 @@ let activity;
 let price;
 let time;
 
-$(".slot").click( function () {
+$(".slot").click(function () {
 	cSlot = this;
 	if ($("#datepicker").val() == "") {
 		alert("Select Date");
@@ -47,18 +47,26 @@ $(".cart").click(function () {
 	$("#cartModal").modal("show");
 });
 
+$("#cartModal").on("show.bs.modal", function () {
+	$("#cartitems").empty();
+	let sCart = JSON.parse(sessionStorage.getItem("ShoppingCart")) || [];
+	console.log(sCart);
+	sCart.forEach((activityObj) => {
+		$("#cartitems").append(
+			`<div class="row"><div class="col"><p>${activityObj.Activity}</p></div><div class="col"><p>${activityObj.Time}</p></div><div class="col"><p>${activityObj.Date}</p></div><div class="col"></div><div class="col">${activityObj.Price}</div></div>`
+		);
+	});
+});
+
 function addToCart(name, num, date, time) {
 	activityObj = new Object();
 	activityObj.Activity = name;
 	activityObj.Price = num;
 	activityObj.Date = date;
-    activityObj.Time = time;
-    console.log(cart);
+	activityObj.Time = time;
 	cart.push(activityObj);
-	$(
-		`<div class="row"><div class="col"><p>${activityObj.Activity}</p></div><div class="col"><p>${activityObj.Time}</p></div><div class="col"><p>${activityObj.Date}</p></div><div class="col"></div><div class="col">${activityObj.Price}</div></div>`
-	).insertAfter("#cartRow");
-    sessionStorage.setItem('ShoppingCart', JSON.stringify(cart));
+
+	sessionStorage.setItem("ShoppingCart", JSON.stringify(cart));
 }
 
 let cart = [];
@@ -87,18 +95,29 @@ $("#datepicker").change(function () {
 	$("#cDate").html(date);
 	$("#cDay").html(day);
 	$("#nDate").html(nDate);
-    $("#nDay").html(nDay);
-    $(".pSlot").children(".date-a").html(pDate);
-    $(".cSlot").children(".date-a").html(date);
-    $(".nSlot").children(".date-a").html(nDate);
+	$("#nDay").html(nDay);
+	$(".pSlot").children(".date-a").html(pDate);
+	$(".cSlot").children(".date-a").html(date);
+	$(".nSlot").children(".date-a").html(nDate);
 });
 
 //Local Storage
 $("#purchase").click(function () {
-   let booking = JSON.parse(sessionStorage.getItem('ShoppingCart'));
-    console.log(booking);
-    for (i=0; i < booking.length; i++) {
-        console.log(booking[i]);
-    } 
-
+	let booking = JSON.parse(sessionStorage.getItem("ShoppingCart"));
+	moveToLS(booking);
+	sessionStorage.clear();
+	$("#cartModal").modal("hide");
 });
+
+function moveToLS(arr) {
+	let ls = JSON.parse(localStorage.getItem("booking")) || {};
+	arr.forEach((booking) => {
+		let date = booking.Date;
+
+		if (typeof ls[date] === "undefined") {
+			ls[date] = {};
+		}
+		ls[date][booking.Time] = true;
+	});
+	localStorage.setItem("booking", JSON.stringify(ls));
+}
