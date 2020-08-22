@@ -72,8 +72,10 @@ function addToCart(name, num, date, time) {
 let cart = [];
 
 //Date picker
+let slotsTest = [];
 
 $("#datepicker").change(function () {
+	//Set dates on booking grid
 	let str = $(this).datepicker({ dateFormat: "dd/mm/yyyy" }).val();
 	let datet = new Date(str);
 	let date = datet.toLocaleDateString();
@@ -99,6 +101,10 @@ $("#datepicker").change(function () {
 	$(".pSlot").children(".date-a").html(pDate);
 	$(".cSlot").children(".date-a").html(date);
 	$(".nSlot").children(".date-a").html(nDate);
+	// //Change color of booking system
+	let slots =  document.querySelectorAll('.slot')
+	let booking = JSON.parse(localStorage.getItem("booking"));
+	
 });
 
 //Local Storage
@@ -120,4 +126,8 @@ function moveToLS(arr) {
 		ls[date][booking.Time] = true;
 	});
 	localStorage.setItem("booking", JSON.stringify(ls));
+}
+
+function empty(arr) {
+	arr.length = 0;
 }

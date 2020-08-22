@@ -100,7 +100,7 @@ footer a {
 /* About Us*/
 .about {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 
@@ -110,8 +110,8 @@ footer a {
 
 .about-c {
     font-family: "Roboto", sans-serif;
-    font-size: 12px;
-    margin-top: 15px;
+    font-size: 25px;
+    margin-top: 20px;
     margin-left: 10px;
 }
 
