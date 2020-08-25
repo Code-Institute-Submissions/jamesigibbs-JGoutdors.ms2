@@ -47,13 +47,22 @@ $(".cart").click(function () {
 	$("#cartModal").modal("show");
 });
 
+let sum;
+let acPrice = JSON.parse(sessionStorage.getItem('ShoppingCart'));
+
+for (let i = 0; i < acPrice.length; i++) {
+	sum += parseFloat(acPrice[i][Price]);
+}
+
+$(".totel").html(sum);
+
 $("#cartModal").on("show.bs.modal", function () {
 	$("#cartitems").empty();
 	let sCart = JSON.parse(sessionStorage.getItem("ShoppingCart")) || [];
 	console.log(sCart);
 	sCart.forEach((activityObj) => {
 		$("#cartitems").append(
-			`<div class="row"><div class="col"><p>${activityObj.Activity}</p></div><div class="col"><p>${activityObj.Time}</p></div><div class="col"><p>${activityObj.Date}</p></div><div class="col"></div><div class="col">${activityObj.Price}</div></div>`
+			`<div class="row"><div class="col"><p>${activityObj.Activity}</p></div><div class="col"><p>${activityObj.Time}</p></div><div class="col"><p>${activityObj.Date}</p></div><div class="col"></div><div class="col price">${activityObj.Price}</div></div>`
 		);
 	});
 });
@@ -76,7 +85,7 @@ let slotsTest = [];
 
 $("#datepicker").change(function () {
 	//Set dates on booking grid
-	let str = $(this).datepicker({ dateFormat: "dd/mm/yyyy" }).val();
+	let str = this.value;
 	let datet = new Date(str);
 	let date = datet.toLocaleDateString();
 	let dayi = datet.getDay();
@@ -102,10 +111,23 @@ $("#datepicker").change(function () {
 	$(".cSlot").children(".date-a").html(date);
 	$(".nSlot").children(".date-a").html(nDate);
 	// //Change color of booking system
-	let slots =  document.querySelectorAll('.slot')
-	let booking = JSON.parse(localStorage.getItem("booking"));
-	
+	checkDate($(".slot.pSlot"));
+	checkDate($(".slot.cSlot"));
+	checkDate($(".slot.nSlot"));
 });
+
+function checkDate(day) {
+	let booking = JSON.parse(localStorage.getItem("booking"));
+	for (let i = 0; i < day.length; i++) {
+		let dayDate = $(day[i]).find(".date-a").text();
+		let dayTime = $(day[i]).find(".time-a").text();
+		if (booking && booking[dayDate] && booking[dayDate][dayTime]) {
+			$(day[i]).css("background-color", "rgb(255, 0, 0)");
+		} else {
+			$(day[i]).css("background-color", "rgb(0, 128, 0)");
+		}
+	}
+}
 
 //Local Storage
 $("#purchase").click(function () {
@@ -131,3 +153,5 @@ function moveToLS(arr) {
 function empty(arr) {
 	arr.length = 0;
 }
+
+//Totel
