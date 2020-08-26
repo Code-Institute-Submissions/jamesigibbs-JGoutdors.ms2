@@ -15,7 +15,7 @@
 	.slot {
 		width: 75%;
 	}
-    #logo {
+	#logo {
 		padding-bottom: 10px;
 		padding-top: 5px;
 	}
@@ -41,4 +41,13 @@
 	.hero-c {
 		overflow-x: hidden;
 	}
+
+	/* booking.html */
+	.date {
+		font-size: 12px;
+	}
+
+    .slot-sm {
+        width: 25%;
+    }
 }
