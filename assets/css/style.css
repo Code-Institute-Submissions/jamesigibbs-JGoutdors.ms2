@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Source+Sans+Pro:wght@400;600;700;900&display=swap');
 
-/*Body-------------------------------------------------------------------*/
+/*Body---------------------------------------------------------------*/
 body {
     font-family: "Source Sans Pro", sans-serif;
     background-image: url("../img/background.jpg");
@@ -86,7 +86,7 @@ footer a {
     
 }
 
-/*index.html--------------------------------------------------------------*/
+/*index.html---------------------------------------------------------*/
 
 /*Hero img*/
 #hero {
@@ -121,7 +121,7 @@ footer a {
     margin-top: 50px;
 }
 
-/*activites.html----------------------------------------------------*/
+/*activites.html-----------------------------------------------------*/
 .activity-c {
     background-color: #629460; 
     margin: 20px;
@@ -149,7 +149,7 @@ footer a {
     margin: 0 auto
 }
 
-/*booking.html----------------------------------------------------*/
+/*booking.html-------------------------------------------------------*/
 .date {
      margin: 10px auto;
 
@@ -214,7 +214,7 @@ footer a {
 }
 
 
-/*contact.html----------------------------------------------------*/
+/*contact.html-------------------------------------------------------*/
 
 .contact-f {
     padding: 30px 50px 20px 50px;
@@ -240,7 +240,7 @@ footer a {
     background-color: #1c7191;
 }
 
-/*Activities, e.g climbing.html----------------------------------------------------*/
+/*Activities, e.g climbing.html--------------------------------------*/
 .book-b {
     background-color: #629460;
     border: 2.5px #2C3D36 solid;

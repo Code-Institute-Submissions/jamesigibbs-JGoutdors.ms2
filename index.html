@@ -57,13 +57,13 @@
 									<li class="nav-item">
 										<a class="nav-link" href="contact.html">Contact Us</a>
 									</li>
-									<li class="nav-item d-lg-none"><a class="nav-link" href="#">Shopping Cart</a></li>
+									<li class="nav-item d-lg-none"><a class="nav-link cart" href="#">Shopping Cart</a></li>
 								</ul>
 							</div>
 						</nav>
 					</div>
 					<div class="col-lg-2 d-none d-lg-block">
-						<i class="fas fa-shopping-cart shopping"></i>
+						<a class="cart"><i class="fas fa-shopping-cart shopping"></i></a>
 					</div>
 				</div>
 			</div>
@@ -77,6 +77,56 @@
 		<!--About Us-->
 		<section>
 			<div class="container content">
+            <!--Modal Cart-->
+				<div
+					class="modal fade"
+					id="cartModal"
+					tabindex="-1"
+					role="dialog"
+					aria-labelledby="Shopping Cart Modal"
+					aria-hidden="true"
+					data-keyboard="false"
+					data-backdrop="static"
+				>
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="shoppingModalLabel">Shopping Cart</h5>
+								<span aria-hidden="true">&times;</span>
+							</div>
+							<div class="modal-body">
+								<div class="row">
+									<div class="col"><p>Activity</p></div>
+									<div class="col"><p>Time</p></div>
+									<div class="col"><p>Date</p></div>
+									<div class="col"></div>
+									<div class="col">Price</div>
+								</div>
+								<hr />
+								<div id="cartitems"></div>
+								<hr />
+								<div class="row">
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"><p>Totel</p></div>
+								</div>
+								<div class="row">
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"><span id="totel"></span></div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal" id="cancelS">Cancel</button>
+								<button type="button" class="btn btn-primary" id="purchase">Puchase</button>
+							</div>
+						</div>
+					</div>
+				</div>
 				<h1>JG Outdoors</h1>
 				<div class="row">
 					<div class="col-lg-6 col-12 order-2 about">
@@ -126,8 +176,6 @@
 				</div>
 			</div>
 		</footer>
-		<script src="assets/scripts/temp.js"></script>
-
 		<script
 			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -142,6 +190,7 @@
 			src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
 			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 			crossorigin="anonymous"
-		></script>
+		></script>        
+        <script src="assets/scripts/book.js"></script>
 	</body>
 </html>

@@ -64,7 +64,7 @@
 						</nav>
 					</div>
 					<div class="col-lg-2 d-none d-lg-block">
-						<i class="fas fa-shopping-cart shopping"></i>
+						<a class="cart"><i class="fas fa-shopping-cart shopping"></i></a>
 					</div>
 				</div>
 			</div>
@@ -78,6 +78,56 @@
 		<!--Kayaking-->
 		<section>
 			<div class="container content">
+            <!--Modal Cart-->
+				<div
+					class="modal fade"
+					id="cartModal"
+					tabindex="-1"
+					role="dialog"
+					aria-labelledby="Shopping Cart Modal"
+					aria-hidden="true"
+					data-keyboard="false"
+					data-backdrop="static"
+				>
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="shoppingModalLabel">Shopping Cart</h5>
+								<span aria-hidden="true">&times;</span>
+							</div>
+							<div class="modal-body">
+								<div class="row">
+									<div class="col"><p>Activity</p></div>
+									<div class="col"><p>Time</p></div>
+									<div class="col"><p>Date</p></div>
+									<div class="col"></div>
+									<div class="col">Price</div>
+								</div>
+								<hr />
+								<div id="cartitems"></div>
+								<hr />
+								<div class="row">
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"><p>Totel</p></div>
+								</div>
+								<div class="row">
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"></div>
+									<div class="col"><span id="totel"></span></div>
+								</div>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal" id="cancelS">Cancel</button>
+								<button type="button" class="btn btn-primary" id="purchase">Puchase</button>
+							</div>
+						</div>
+					</div>
+				</div>
 				<h1>Kayaking</h1>
 				<p>
 					One and a half hour session on our 2 acre lake. Available April to September only. Full instruction from the
@@ -135,6 +185,6 @@
 			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 			crossorigin="anonymous"
 		></script>
-		<script src="assets/scripts/menu.js"></script>
+		<script src="assets/scripts/book.js"></script>
 	</body>
 </html>
