@@ -19,7 +19,7 @@
 		<link rel="stylesheet" href="assets/css/responsive.css" />
 		<title>JG Outdoors</title>
 		<link rel="icon" type="image/png" href="hassets/img/logo.png" />
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
 	</head>
 
 	<body>
@@ -71,6 +71,7 @@
 		</header>
 		<!--Hero Img-->
 		<section>
+        <h2 class="d-none">Hero</h2>
 			<div class="container hero-c">
 				<img id="hero" src="assets/img/building.png" alt="Group" />
 			</div>
@@ -84,7 +85,7 @@
 					id="cartModal"
 					tabindex="-1"
 					role="dialog"
-					aria-labelledby="Shopping Cart Modal"
+					aria-label="Shopping Cart Modal"
 					aria-hidden="true"
 					data-keyboard="false"
 					data-backdrop="static"
@@ -153,7 +154,7 @@
 							class="form-control"
 							name="email"
 							id="email"
-							aria-describedby="emailHelp"
+							aria-describedby="email"
 							placeholder="Enter email"
 							required
 						/>
@@ -161,7 +162,6 @@
 					<div class="form-group">
 						<label for="message">Message</label>
 						<textarea
-							type="text"
 							class="form-control"
 							name="message"
 							id="message"
@@ -211,7 +211,7 @@
 			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
 			crossorigin="anonymous"
 		></script>
-		<script type="text/javascript">
+		<script>
 			(function () {
 				emailjs.init("user_Gz0IvrcKFhPtkSTIP4x1N");
 			})();
