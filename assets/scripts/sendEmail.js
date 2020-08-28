@@ -13,3 +13,7 @@ function sendMail(contactForm) {
         });
         return false;
 }
+
+$('.submit').click( function () {
+    alert('Email Sent')
+});
