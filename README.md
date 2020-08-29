@@ -4,13 +4,13 @@ This is my Second project for the Code Institute Full Stack Development diploma.
 
 ## UX
 
-This project is designed to be used by potential customers so that they can find out information on all the activities that are on offer and then booked an activity on a certain date and time slot. It can also be used by the centre  to easily track what bookings that they have on each day.
+This project is designed to be used by potential customers so that they can find out information on all the activities that are on offer and then book an activity on a certain date and time slot. It can also be used by the centre  to easily track what bookings that they have on each day.
 
 ### User Stories
 
 - A customer looking to find out more information on the activities available and book an activity
-- The centre to find out what time slot have been booked and create a time table for each day easily
-- A customer looking for more information on the centre who wants an easy way to get in contact. 
+- The centre to find out what time slots have been booked and create a time table for each day
+- A customer looking for more information about the centre who wants an easy way to get in contact 
 - A software developer looking to see my ability to write javascript
 
 ### Mockups
@@ -18,12 +18,12 @@ This project is designed to be used by potential customers so that they can find
 The web site consists of ten pages each containing different information and links to booking with two pages heavily dependent on javascript. These two pages have purpose built programs to allow the user to book sessions easily and get in contact with the centre.
 ##### These programs were:
 - Booking system which saves the date and time slot to the local storage using a shopping cart. This system doesn’t allow people to double book a time slot.
-- A shopping cart which saves the activity object to session storage and gives the array of objects a gui which can be accessed from all pages.
+- A shopping cart which saves the activity object to session storage and gives the array of objects a GUI which can be accessed from all pages.
 - A contact form which emails the centre with any questions that the customer may have.
 
 ### Wireframing
 
-I drew up the first plan of the website on balsamiq. This was a simple drawing with just a basic plan of the website and program, a lot of the ideas from this drawing have been scraped as I wanted to keep the website simple.
+I drew up the first plan of the website on Balsamiq. This was a simple drawing with just a basic plan of the website and program, many of the ideas from this drawing have been scrapped as I wanted to keep the website simple.
 
 ![Balsamiq Screenshot Home](assets/img/README/bal-home.PNG)
 ![Balsamiq Screenshot Booking](assets/img/README/bal-booking.PNG)
@@ -34,7 +34,7 @@ I drew up the first plan of the website on balsamiq. This was a simple drawing w
 
 [Balsamiq File](assets/files/Milestone2.bmpr)
 
-I then created a second design using adobe XD which included the colours and images for the project as well as the fonts I would use and the pixel measurements for spacing and sizing. Adobe XD allowed me to create a detailed mobile and desktop design. I mostly stuck to this plan however a changed a few small things so they would work better in the browser.
+I then created a second design using adobe XD which included the colours and images for the project as well as the fonts I would use and the pixel measurements for spacing and sizing. Adobe XD allowed me to create a detailed mobile and desktop design. I mostly stuck to this plan however I changed a few small things so they would work better in the browser.
 
 ![XD Screenshot Home](assets/img/README/xd-home.PNG)
 ![XD Screenshot Booking](assets/img/README/xd-book.PNG)
@@ -49,13 +49,12 @@ I then created a second design using adobe XD which included the colours and ima
 ### Existing Features
 
 - **Navagtion Bar** – Allows intuitive navigation around the different pages of my web site.
-- **Drop down** – Allows access to subpages of the web site easily.
 - **Footer** – This contains links to my social media accounts as well as email so people can get quick access to my contents on each page.
 - **Contact form** – A page that makes the process of contacting me accessible from the webpage.
 - **Responsive** – This ensures that the website works on all screen sizes.
 - **Shopping Cart** - Makes it easy to see the different activities booked and total price of all bookings
-- **Booking System** - Makes it easy to see when there as time slots free and to book the slot that you want so that no one else can
-- **Local Storage** - used to store the bookings so that the booking program can pull the dates and shoe to user weather the splot is free or not
+- **Booking System** - Makes it easy to see when there are time slots free and to book the slot that you want so that no one else can
+- **Local Storage** - used to store the bookings so that the booking program can pull the dates and show the user whether the slot is free or not
 - **Session Storage** - allow the cart items to be stored so that the cart can be accessed across the whole page
 
 
