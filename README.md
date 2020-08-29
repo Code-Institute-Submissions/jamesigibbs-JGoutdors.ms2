@@ -36,9 +36,9 @@ I drew up the first plan of the website on balsamiq. This was a simple drawing w
 
 I then created a second design using adobe XD which included the colours and images for the project as well as the fonts I would use and the pixel measurements for spacing and sizing. Adobe XD allowed me to create a detailed mobile and desktop design. I mostly stuck to this plan however a changed a few small things so they would work better in the browser.
 
-![Balsamiq Screenshot Home](assets/img/README/xd-home.PNG)
-![Balsamiq Screenshot Booking](assets/img/README/xd-book.PNG)
-![Balsamiq Screenshot Activities](assets/img/README/xd-contact.PNG)
+![XD Screenshot Home](assets/img/README/xd-home.PNG)
+![XD Screenshot Booking](assets/img/README/xd-book.PNG)
+![XD Screenshot Activities](assets/img/README/xd-contact.PNG)
 
 [PDF of XD design](assets/pdf/milestone2-xd.pdf)
 
@@ -137,7 +137,7 @@ I have used the following tools to test my website from different perspectives.
 
 I asked friend and family to fill out my testing spreadsheet with there devices to get as much user testing as possible
 
-![Google Sheet screenshot](assets/img/README/bal-activities.PNG)
+![Google Sheet screenshot](assets/img/README/testing.PNG)
 
 [Google Sheets testing Doc](https://docs.google.com/spreadsheets/d/13pxFP6c3-Ro9Kfq3aMPr6MVmqYErxBQe_oHAo17Qv7k/edit?usp=sharing)
 
