@@ -25,10 +25,10 @@ The web site consists of ten pages each containing different information and lin
 
 I drew up the first plan of the website on balsamiq. This was a simple drawing with just a basic plan of the website and program, a lot of the ideas from this drawing have been scraped as I wanted to keep the website simple.
 
-![Balsamiq Screenshot Home](assets/imgs/README/bal-home.png)
-![Balsamiq Screenshot Booking](assets/imgs/README/bal-booking.png)
-![Balsamiq Screenshot Activities](assets/imgs/README/bal-activities.png)
-![Balsamiq Screenshot Contact](assets/imgs/README/bal-contact.png)
+![Balsamiq Screenshot Home](assets/img/README/bal-home.png)
+![Balsamiq Screenshot Booking](assets/img/README/bal-booking.png)
+![Balsamiq Screenshot Activities](assets/img/README/bal-activities.png)
+![Balsamiq Screenshot Contact](assets/img/README/bal-contact.png)
 
 [PDF of Balsamiq design](assets/pdf/milestone2-bal.pdf)
 
@@ -36,9 +36,9 @@ I drew up the first plan of the website on balsamiq. This was a simple drawing w
 
 I then created a second design using adobe XD which included the colours and images for the project as well as the fonts I would use and the pixel measurements for spacing and sizing. Adobe XD allowed me to create a detailed mobile and desktop design. I mostly stuck to this plan however a changed a few small things so they would work better in the browser.
 
-![Balsamiq Screenshot Home](assets/imgs/README/xd-home.png)
-![Balsamiq Screenshot Booking](assets/imgs/README/xd-booking.png)
-![Balsamiq Screenshot Activities](assets/imgs/README/xd-contact.png)
+![Balsamiq Screenshot Home](assets/img/README/xd-home.png)
+![Balsamiq Screenshot Booking](assets/img/README/xd-booking.png)
+![Balsamiq Screenshot Activities](assets/img/README/xd-contact.png)
 
 [PDF of XD design](assets/pdf/milestone2-xd.pdf)
 
@@ -137,7 +137,7 @@ I have used the following tools to test my website from different perspectives.
 
 I asked friend and family to fill out my testing spreadsheet with there devices to get as much user testing as possible
 
-![Google Sheet screenshot](assets/imgs/README/bal-activities.png)
+![Google Sheet screenshot](assets/img/README/bal-activities.png)
 
 [Google Sheets testing Doc](https://docs.google.com/spreadsheets/d/13pxFP6c3-Ro9Kfq3aMPr6MVmqYErxBQe_oHAo17Qv7k/edit?usp=sharing)
 
